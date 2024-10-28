@@ -36,7 +36,7 @@ export const createOrder = async (req: Request, res: Response) => {
     });
 
     await addNewOrder.save();
-    const updateQty = cartItems.map(async (item) => {
+    cartItems.map(async (item) => {
       await productModel.findOneAndUpdate(
         { _id: item._id },
         { $inc: { quantity: -item.quantity } }
