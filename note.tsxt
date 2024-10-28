@@ -1,0 +1,14 @@
+
+//fetching data with fetch
+// export const fetchCategories = async ({ setGetCategory }: ICatProp) => {
+//   try {
+//     const res = await fetch(
+//       "http://192.168.43.206:8084/category/getAllCategories"
+//     );
+//     const data = await res.json();
+//     console.log(data);
+//     setGetCategory(data.result);
+//   } catch (error) {
+//     console.error(error);
+//   }
+// };
